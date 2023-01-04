@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+  width: 400px;
+  height: auto;
+  padding: 20px;
+  background-color: aqua;
+  border: 4px inset rgba(242, 22, 56, 0.56);
+  border-radius: 5px;
+  -webkit-box-shadow: 7px 7px 9px 0px rgba(0, 0, 0, 0.41);
+  box-shadow: 7px 7px 9px 0px rgba(0, 0, 0, 0.41);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container .heading {
+  display: block;
+  border-bottom: 3px solid #ABA6A6;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+
+}
+
+.container .list-task {
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+}
+
+.list-task .task {
+  padding-left: 18px;
+}
+
+.list-task .task .item {
+  list-style-type: none;
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255, 0.5);
+  margin-bottom: 3px;
+  transition: all 1s ease;
+  transform-origin: top left;
+  font-size: 1.1em;
+  padding: 5px;
+}
+
+.list-task .task .item.fall {
+  transform: rotate(20deg);
+  opacity: 0;
+}
+
+.list-task .task .item .work {
+  transition: opacity 0.5s linear;
+}
+
+.list-task .task .item .work.done {
+  opacity: 0.7;
+  text-decoration: line-through;
+}
+
+.list-task .task .item .action-btn {
+  cursor: pointer;
+
+}
+
+.list-task .task .item .action-delete {
+  background-color: transparent;
+  border: transparent;
+}
+
+.list-task .task .item .action-checkbox-done {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: 0.2em;
+}
+.list-task .filter-task {
+  margin-top: 3px;
+  text-align: right;
+}
+.list-task .filter-task .action-checkbox-filter{
+  position: relative;
+  top: 0.1em;
+  margin-left: 5px;
+}
+
+.form .title{
+  display: block;
+}
+.form #inputNewTask {
+  width: 200px;
+  height: 40px;
+  border: none;
+}
+
+.form .button {
+  height: 40px;
+  margin-right: 0px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: aliceblue;
+  background-color: #232323;
+  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18
+}
+
+.form .button:hover {
+  filter: brightness(120%);
+}
