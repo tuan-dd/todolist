@@ -17,9 +17,9 @@ Title: todo List
 
 -Add task by input form.
 # components 
-1 - <container>
-  2 - <header>
-    3 - <ListTask>
-         1.1 <Task>
-         1.2 <filter>
-      4 - <Form>
+1 - <container />
+  2 - <header />
+  3 - <ListTask />
+    1.1 - <Task />
+    1.2 - <Filter />
+  4 - <Form />
